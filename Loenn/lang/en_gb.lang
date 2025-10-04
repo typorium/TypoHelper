@@ -1,0 +1,52 @@
+################################
+# MOD RELATED
+################################
+
+mods.TypoHelper.name=TypoHelper
+
+
+################################
+# ENTITIES
+################################
+
+# Entity Specific Wind
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.placements.name.default=Entity-Specific Wind
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.attributes.description.opacity=Range from 0 to 1 used to input the transparency of the wind-zone.
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.attributes.description.account_for_level_wind=The entity won't be affected by the room's wind. If enabled, the entity will have a small icon under it.
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.attributes.description.can_player_interact=If enabled, the player will be affected.
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.attributes.description.can_entities_interact=If enabled, entities other than the player will be affected.
+entities.Typorium_TypoHelper_Entity_EntitySpecificWind.attributes.description.compatibility_mode=If your entity is unchanged after interacting with this, enable this option (example : Jelly Platforms).
+
+# Subpixel Panel
+entities.Typorium_TypoHelper_Entity_SubpixelPanel.placements.name.default=Subpixel Panel
+
+# Theo Teleporter
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.placements.name.default=Theo Teleporter
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.name.link_id=Link ID
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.name.cooldown=Cooldown until Active
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.name.flag=Flag
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.name.work_with_all_holdables=Work with all Holdables
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.description.link_id=Determines which teleporters are connected together.
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.description.cooldown=How much seconds the teleporter will be deactivated when used.
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.description.flag=Lets you activate or deactivate the teleporter using a flag.
+entities.Typorium_TypoHelper_Entity_TheoTeleporter.attributes.description.work_with_all_holdables=When checked, the teleporter will work with all holdables entities.
+
+# Unloadable Dust Static Spinner
+entities.Typorium_TypoHelper_Entity_UnloadableDustStaticSpinner.placements.name.default=Dust Sprite (Static, Unloadable)
+entities.Typorium_TypoHelper_Entity_UnloadableDustStaticSpinner.attributes.description.attachToSolid=Attach to zip mover, swap blocks, ...
+
+# Soda Holdable
+entities.Typorium_TypoHelper_Entity_SodaHoldable.placements.name.default=Soda Holdable
+entities.Typorium_TypoHelper_Entity_SodaHoldable.attributes.description.diameter=The area of explosion of the holdable. If set to 0, it will by default have a value of 32.
+
+
+################################
+# TRIGGERS
+################################
+
+# No Wind Move (Player)
+triggers.Typorium_TypoHelper_Trigger_PlayerNoWind.placements.name.default=No Wind (Player)
+triggers.Typorium_TypoHelper_Trigger_PlayerNoWind.attributes.name.affected=Affected
+
+# Instant Reverse Speed
+triggers.Typorium_TypoHelper_Trigger_InstantReverseSpeed.placements.name.default=Instant Reverse Speed

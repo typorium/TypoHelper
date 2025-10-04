@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sprites>
+
+    <!-- Entity-Specific Wind-->
+    <Typorium_TypoHelper_EntitySpecificWind path="entities/Typorium/TypoHelper/EntitySpecificWind/windtypes/" start="none">
+        <Center/>
+
+        <Loop id="none" path="none" delay="1"/>
+        <Loop id="left" path="left" delay="1"/>
+        <Loop id="right" path="right" delay="1"/>
+        <Loop id="left_strong" path="left_strong" delay="1"/>
+        <Loop id="right_strong" path="right_strong" delay="1"/>
+        <Loop id="left_onoff" path="left_onoff" delay="1"/>
+        <Loop id="right_onoff" path="right_onoff" delay="1"/>
+        <Loop id="left_fast_onoff" path="left_fast_onoff" delay="1"/>
+        <Loop id="right_fast_onoff" path="right_fast_onoff" delay="1"/>
+        <Loop id="alternating" path="alternating" delay="1"/>
+        <Loop id="right_crazy" path="right_crazy" delay="1"/>
+        <Loop id="down" path="down" delay="1"/>
+        <Loop id="up" path="up" delay="1"/>
+        <Loop id="space" path="space" delay="1"/>
+
+    </Typorium_TypoHelper_EntitySpecificWind>
+
+
+    <!-- Theo Teleporter-->
+    <Typorium_TypoHelper_TheoTeleporter path="entities/Typorium/TypoHelper/TheoTeleporter/" start="activated">
+        <Loop id="activated" path="activated" delay="0.1" frames="00"/>
+        <Anim id="a2d" path="a2d/" delay="0.03" frames="00-07" goto="desactivated"/>
+
+        <Loop id="desactivated" path="desactivated" delay="0.1" frames="00"/>
+        <Anim id="d2a" path="d2a/" delay="0.03" frames="00-03" goto="activated"/>
+
+        <Loop id="flag_desactivated" path="flag_desactivated" delay="0.1" frames="00"/>
+        <Anim id="flagd2a" path="flagd2a/" delay="0.03" frames="00-05" goto="activated"/>
+        <Anim id="flaga2d" path="flaga2d/" delay="0.03" frames="00-05" goto="flag_desactivated"/>
+    </Typorium_TypoHelper_TheoTeleporter>
+
+
+    <!-- Soda Holdable -->
+    <Typorium_TypoHelper_SodaHoldable path="entities/Typorium/TypoHelper/SodaHoldable/" start="normal">
+        <Justify x="0.5" y="0.5" />
+        <Loop id="normal" path="soda" delay="0.1" frames="00" />
+        <Anim id="explode" path="explode/explode" delay="0.05" frames="00-04" goto="normal"/>
+    </Typorium_TypoHelper_SodaHoldable>
+
+</Sprites>
